@@ -1,14 +1,12 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const strftime = require('strftime')
-const tokenfile = require("./tokenfile.json");
-const token = tokenfile.token;
+
+const token = process.env.token;
 const ms = require("ms")
 const fs = require("fs")
-const ytdl = require("ytdl-core")
-const {YTSearcher} = require('ytsearcher')
-const ytpl = require("ytpl")
-const quenue = new Map()
+
+
   let boolebot = true;
   let boolewarn = true;   
 
